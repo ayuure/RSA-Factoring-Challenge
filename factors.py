@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    import os
+    import time
+    start_time = time.time()
     if len(sys.argv) != 2:
         print("Usage: ./factor <path_to_file>")
         sys.exit(1)
@@ -38,3 +39,6 @@ if __name__ == "__main__":
         print(f"Error: File '{file_path}' not found.")
     except Exception as e:
         print(f"Error: {e}")
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Elapsed Time: {elapsed_time} seconds")
