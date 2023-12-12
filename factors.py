@@ -1,11 +1,16 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
+    import os
+    if len(sys.argv) != 2:
+        print ("Usage: ./factor <path_to_file>")
+        sys.exit(1)
     file_path = sys.argv[1]
     q = 0
     p = 0
     n = 0
     try:
+        file_path = os.path.join("test", file_path)
         with open(file_path, 'r') as file:
             lines = file.readlines()
             for content in lines:
