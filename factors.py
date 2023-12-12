@@ -2,7 +2,6 @@
 if __name__ == "__main__":
     import sys
     file_path = sys.argv[1]
-    moves = 0
     q = 0
     p = 0
     n = 0
