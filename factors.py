@@ -10,7 +10,6 @@ if __name__ == "__main__":
     p = 0
     n = 0
     try:
-        file_path = os.path.join("test", file_path)
         with open(file_path, 'r') as file:
             lines = file.readlines()
             for content in lines:
