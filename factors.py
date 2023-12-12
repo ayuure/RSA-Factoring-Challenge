@@ -6,7 +6,7 @@ if __name__ == "__main__":
     q = 0
     p = 0
     n = 0
-    try: 
+    try:
         with open(file_path, 'r') as file:
             lines = file.readlines()
             for content in lines:
@@ -30,7 +30,7 @@ if __name__ == "__main__":
                     n = int(content)
                     p = int(content)/15485773
                     q = 15485773
-                print("{}={}*{}".format(n,int(p),q))
+                print("{}={}*{}".format(n, int(p), q))
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
     except Exception as e:
